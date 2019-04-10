@@ -23,3 +23,9 @@ Also note that since a firewall definition exists on the VM, it is **not**
 sufficient to change the security list on your Virtual Cloud Network or 
 subnet(s).
 
+# TODO
+
+* More testing to ensure robustness.
+* Parametrizing the ports/protocol per group to allow for 80/443 on web, 
+1521 on Oracle DB, etc.
+
