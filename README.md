@@ -15,7 +15,7 @@ The documentation clearly states that `ufw` cannot be used to define your own
 rules. This is different than for Centos7 and Oracle Linux 7 where you can 
 use `firewall-cmd`. So the only way to allow for additional services on your
 Ubuntu VM is to add your rules correctly into the chain. You can of course
-solve this by removing the `REJECT` line in the `INOPUT` chain, 
+solve this by removing the `REJECT` line in the `INPUT` chain, 
 but I would not recommend doing so. The Oracle documentation, at least, does 
 not suggest this is an option.
 
