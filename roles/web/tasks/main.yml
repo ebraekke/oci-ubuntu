@@ -1,0 +1,27 @@
+---
+
+- name: Ensure apache is at the latest version
+  yum:
+    name: apache2
+    state: latest
+  notify:
+  - restart apache
+- name: Ensure apache is running
+  service:
+    name: apache2
+    state: started
+
+- name: Fix iptables
+  iptables: 
+    action: insert
+    rule_num: 6 
+    chain: INPUT
+    protocol: tcp
+    destination_port: "{{ item }}"
+    ctstate: NEW
+    jump: ACCEPT
+  with_items: 
+  - 80
+  - 443
+  - 8080
+  - 1521
