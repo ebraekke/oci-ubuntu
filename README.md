@@ -19,7 +19,7 @@ solve this by removing the `REJECT` line in the `INPUT` chain,
 but I would not recommend doing so. The Oracle documentation, at least, does 
 not suggest this as an option.
 
-Also note that since a firewall definition exists on the VM it is **not**
+Also note that since a firewall definition exists on the VM, it is **not**
 sufficient to change the security list on your Virtual Cloud Network or 
 subnet(s).
 
