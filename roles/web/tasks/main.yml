@@ -25,3 +25,5 @@
   - 443
   - 8080
   - 1521
+  notify:
+  - save iptables
